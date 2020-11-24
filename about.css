@@ -1,0 +1,130 @@
+/* BODY */
+
+.gallery {
+    margin-bottom: 25px;
+    background-color: honeydew;
+    padding: 20px;
+}
+
+.img-greece {
+    width: 100%;
+}
+
+@media(min-width:700px) {
+    .img-greece {
+        height: 405px;
+    }
+}
+
+.intro {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    padding-bottom: 5px;
+}
+
+.about {
+    margin-bottom: 25px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.services {
+    background-color: #fff;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+.contacts-main {
+    background-color: #fff;
+    margin-bottom: 25px;
+    padding: 20px;
+}
+
+/* TESTIMONIALS */
+
+.testimonials {
+    background-position: center;  
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url(https://images.unsplash.com/photo-1518463892881-d587bf2c296a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80);
+    background-attachment: fixed; 
+    color: #fff;
+    font-weight: 300;
+    font-style: italic;
+    padding: 20px;
+}
+
+.li-test {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.img-test {
+    width: 150px;
+    height: 170px;
+    margin-right: 16px;
+    border-radius: 50%;
+    padding: 10px;
+    border:1px solid #eeeeee;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+}
+
+q {
+    margin-bottom: 10px;
+}
+
+.button-down {
+    /* color: black; */
+    border-radius: 0;
+}
+
+/* SLIDER-BUTTON */
+
+#myBtn {
+    display: none; 
+    position: fixed;  
+    bottom: 140px; /* Place the button at the bottom of the page */
+    right: 10px; /* Place the button 30px from the right */
+    z-index: 99; 
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color:#006bff; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+/* OTHER */
+
+.see-more {
+    border: 1px solid black;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    background-color: #006bff;
+    color: white;
+    font-size: 15px;
+    line-height: 1.5;
+    border-radius: 3px;
+    border-color: #ccc;
+}
+
+.see-more:hover {
+    opacity: 0.8;
+    color: #fff;
+}
+
+
+
+
+

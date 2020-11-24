@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <script type="text/javascript" src="site.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/b9c1ee92c4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="typography.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+
+    <div class="site">
+        
+        <sidebar class="sidebar">
+            <header>
+                <img class="img-profile"  src="Content/profilePic.jpg"> 
+                <nav class= "navbar">
+                    <ul >
+                        <li lang="bg" class="nav" id="menubutton" ><a class="link-nav" href="javascript:void(0);" onclick="myFunction()"><i class="fas fa-bars"></i>Меню</a></li>
+                    <div id="myLinks">
+                        <li lang="bg" class="nav"><a  class="link-nav" href="index.html"><i class="fas fa-user"></i>За мен</a></li>
+                        <li lang="bg" class="nav"><a class="link-nav" href="services.html"><i class="fas fa-bell"></i>Услуги и Цени</a></li>
+                        <li lang="bg" class="nav"><a class="link-nav" href="diplomas.html"><i class="fas fa-book"></i>Дипломи</a></li>
+                        <li lang="bg" class="nav"><a class="link-nav" href="contacts.html"><i class="fa fa-phone"></i>Контакти</a></li>
+                        
+                        <li lang="gr" class="nav" id="menubutton" ><a class="link-nav" href="javascript:void(0);" onclick="myFunction()"><i class="fas fa-bars"></i>MENU</a></li>
+                    <div id="myLinks">
+                        <li lang="gr" class="nav"><a class="link-nav" href="index.html"><i class="fas fa-user"></i>ΓΙΑ ΜΕΝΑ</a></li>
+                        <li lang="gr" class="nav"><a class="link-nav" href="services.html"><i class="fas fa-bell"></i>ΥΠΗΡΕΣΙΕΣ ΚΑΙ ΤΙΜΕΣ</a></li>
+                        <li lang="gr" class="nav"><a class="link-nav" href="diplomas.html"><i class="fas fa-book"></i>ΠΤΥΧΙΑ</a></li>
+                        <li lang="gr" class="nav"><a class="link-nav" href="contacts.html"><i class="fa fa-phone"></i>ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                    </div>
+                    </ul>
+                </nav>
+            </header>
+        </sidebar>
+
+
+        <section class="wrapper-main">
+
+            <select id="lang-switch">
+                <option value="bg">Българскиppppp</option>
+                <option value="gr">Ελληνικά</option>
+            </select>
+            
+            <section class="gallery">
+                 <img class="img-greece"
+                    src="Content/img1.jpg"
+                    alt="greece_1"
+                    id="rotator" >               
+                    <img class="img-greece"
+                    src="Content/img2.jpg"
+                    alt="greece_2" hidden>
+                    <img class="img-greece"
+                    src="Content/img3.jpg"
+                    alt="greece_3" hidden>
+                    <img class="img-greece"
+                    src="Content/img4.jpg"
+                    alt="greece_1"
+                    hidden >
+            </section>
+            
+            <section lang="bg" class="about">     
+                <h5>ЗA МЕН</h5>
+                 <p class="intro">Здравейте,
+                    Казвам се Ангел Ангелов, на 36 години от София.</p> 
+                <p class="intro">Завършил съм с отличен успех
+                    Пирейския Университет в Атина, специалност Банково Дело, 
+                    а след това и магистратура по Финанси в 
+                    Университет Тилбург, Холандия.</p> 
+                <p class="intro">Дипломите ми може да видите <a href="diplomas.html"><b>тук</b></a>.</p>
+            </section>
+
+            <section lang="gr" class="about">     
+                <h5>ΓΙΑ ΜΕΝΑ</h5>
+                 <p class="intro">
+                    Γεια σας, Το όνομά μου είναι Angel Angelov, 36 ετών, από την Σόφια.</p> 
+                <p class="intro">Αποφοίτησα με πτυχία από το Πανεπιστήμιο Πειραιώς στην Αθήνα, με πτυχίο Τραπεζικής και στη συνέχεια
+                     απέκτησα μεταπτυχιακό τίτλο στα Χρηματοοικονομικά από το Πανεπιστήμιο Tilburg της Ολλανδίας.</p> 
+                <p class="intro">Μπορείτε να δείτε τα διπλώματά μου <a href="diplomas.html"><b>εδώ</b></a>.</p>
+            </section>
+
+            <section lang="bg" class="services">
+                <h5>УСЛУГИ</h5>
+                <p class="intro">Говоря Гръцки на матерно ниво. Занимавам се с преподаване на Гръцки и Нидерландски език от пет години с хора от различни възрасти и професии
+                 – отзиви от мои ученици може да прочетете <a class="button-down" href="#"><b>тук</b></a>.</p>
+                <p class="intro">Предлагам индивидуални и полуиндивидуални уроци по Гръцки за всички нива, 
+                както и уроци по Български език за гърци.</p>
+                <p class="intro">Подходът ми е индивидуален и съобразен с нуждите, графика и желанията на всеки ученик.  
+                Материалите за обучение са осигурени предварително от мен.</p> <br>
+                <a href="services.html" class="see-more">Вижте повече</a>                
+            </section>
+
+            <section lang="gr" class="services">
+                <h5>ΥΠΗΡΕΣΙΕΣ</h5>
+                <p class="intro">Μιλάω ελληνικά σε μητρικό επίπεδο. Διδάσκω ελληνικά και ολλανδικά εδώ και πέντε χρόνια σε άτομα διαφορετικών ηλικιών και επαγγελμάτων
+                    - μπορείτε να διαβάσετε κριτικές από τους μαθητές μου  <a class="button-down" href="#"><b>εδώ</b></a>.</p>
+                <p class="intro">Προσφέρω ατομικά και ημι-ατομικά μαθήματα ελληνικών για όλα τα επίπεδα, 
+                    καθώς και μαθήματα βουλγαρικής γλώσσας για τους Έλληνες.</p>
+                <p class="intro">Η προσέγγισή μου είναι ατομική και προσαρμοσμένη στις ανάγκες, το πρόγραμμα και τις επιθυμίες κάθε μαθητή. 
+                    Το εκπαιδευτικό υλικό παρέχεται εκ των προτέρων από εμένα.</p> <br>
+                <a href="services.html" class="see-more">Δείτε περισσότερα</a>                
+            </section>
+
+            <section class="contacts-main">
+                <h5 lang="bg">КОНТАКТИ</h5>
+                <h5 lang="gr">ΕΠΙΚΟΙΝΩΝΙΑ</h5>
+                <ul>
+                    <li> <a class="link-contacts" href="tel:+359 876 68 59 59"><i class="fa fa-phone"></i>+359 876 68 59 59 </a></li>
+                    <li> <a class="link-contacts" href="mailto:ang.k.angelov@gmail.com"><i class="fa fa-envelope"></i>ang.k.angelov@gmail.com</a> </li>
+                    <li> <a class="link-contacts" href="https://www.facebook.com/angel.ang.161/"><i class="fab fa-facebook"></i>Facebook</a> </li>
+                </ul>
+            </section>
+            
+            <section lang="bg" class="testimonials">
+                <h5>Отзиви от клиенти</h5>
+                <ul>
+                    <li class="li-test">
+                        <img class="img-test"  src="Content/women.jpg">
+                        <div class="quote">
+                            <q>Ангел е сериозен и коректен учител, който проявява изключително търпение
+                                и обяснява добре новия материал. 
+                            Ако искате да вникнете в езика
+                             - това е Вашият човек.</q> <p>Гергана С., 43 год, София</p> 
+                        </div>
+                    </li>
+                    <li class="li-test">
+                        <img class="img-test"  src="Content/men.jpg">
+                        <div class="quote">
+                            <q>Записах се при Ангел след като закупих недвижим имот в Гърция.
+                                С негова помощ за много кратко време успявах да комуникрам в магазина, 
+                                в таверната или други ежедневни ситуации при посещенияата ми там.
+                            </q> <p>Антонио А., 37 год, София</p> 
+                        </div>
+                    </li>
+                    <li class="li-test">
+                        <img class="img-test"  src="Content/men.jpg">
+                        <div class="quote">
+                            <q>Исках да подобря нивото на гръцкия си за улеснение на комуникацията с 
+                                търговските ми партньори в Гърция. Ангел прояви разбиране към натоварения ми график
+                                и бързо усвоих особеностите и термините на бизнес езика. 
+                            </q> <p>Георги В., 47 год, София</p> 
+                        </div>
+                    </li>
+                </ul>                    
+            </section>
+
+            <section lang="gr" class="testimonials">
+                <h5>Κριτικές πελατών</h5>
+                <ul>
+                    <li class="li-test">
+                        <img class="img-test"  src="Content/women.jpg">
+                        <div class="quote">
+                            <q>Ο Angel είναι ένας σοβαρός και σεβαστός δάσκαλος που είναι εξαιρετικά υπομονετικός και εξηγεί καλά το νέο υλικό.
+                                 Αν θέλετε να καταλάβετε τη γλώσσα - αυτός είναι ο άντρας σας.</q> <p>Gergana S., 43, Σόφια</p> 
+                        </div>
+                    </li>
+                    <li class="li-test">
+                        <img class="img-test"  src="Content/men.jpg">
+                        <div class="quote">
+                            <q>Εγγραφήκα με την Angel αφού αγόρασα ακίνητα στην Ελλάδα. Με τη βοήθειά του, 
+                                σε πολύ σύντομο χρονικό διάστημα ήμουν σε θέση να επικοινωνήσω στο κατάστημα,
+                                 στην ταβέρνα ή σε άλλες καθημερινές καταστάσεις κατά τη διάρκεια των επισκέψεών μου εκεί.
+                            </q> <p>Antonio A., 37 ετών, Σόφια</p> 
+                        </div>
+                    </li>
+                    <li class="li-test">
+                        <img class="img-test"  src="Content/men.jpg">
+                        <div class="quote">
+                            <q>Ήθελα να βελτιώσω το ελληνικό επίπεδο για να διευκολύνω την επικοινωνία με τους
+                                 εμπορικούς μου εταίρους στην Ελλάδα. Ο Άγγελος έδειξε κατανόηση για το πολυάσχολο πρόγραμμά μου και έμαθα γρήγορα
+                                 τις ιδιαιτερότητες και τους όρους της επιχειρηματικής γλώσσας. 
+                            </q> <p>Georgi V., 47, Σόφια</p> 
+                        </div>
+                    </li>
+                </ul>                    
+            </section>
+
+        </section>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up fa-2x"></i></button>
+
+        <footer class="footer"> <p class="text-footer">© 2020 Angel Angelov All rights reserved </p></footer>
+
+    </div>
+</body>
+
+<script>
+    $('[lang="gr"]').hide();
+    $('#lang-switch').change(function () {
+      var lang = $(this).val();
+      switch (lang) {
+        case 'bg': 
+          $('[lang]').hide();
+          $('[lang="bg"]').show();
+          break;
+        case 'gr':
+          $('[lang]').hide();
+          $('[lang="gr"]').show();
+          break;
+      }
+    });
+</script>
+
+<script>
+    $(".button-down").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".testimonials").offset().top},
+        'slow');
+});
+</script>
+ 
+<script>
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+    console.log(mybutton)
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        $('html,body').animate({ scrollTop: 0 }, 500);
+          return false; 
+    }
+
+</script>
+
+</html>

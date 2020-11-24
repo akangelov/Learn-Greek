@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diplomas</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="typography.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="diplomas.css">
+    <script type="text/javascript" src="site.js"></script>
+    <script src="https://kit.fontawesome.com/b9c1ee92c4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="site">
+
+        <sidebar class="sidebar">
+            <header>
+                <img class="img-profile"  src="Content/profilePic.jpg">
+                <nav class= "navbar">
+                    <ul >
+                        <li lang="bg" class="nav" id="menubutton" ><a class="link-nav" href="javascript:void(0);" onclick="myFunction()"><i class="fas fa-bars"></i>Меню</a></li>
+                    <div id="myLinks">
+                        <li lang="bg" class="nav"><a  class="link-nav" href="index.html"><i class="fas fa-user"></i>За мен</a></li>
+                        <li lang="bg" class="nav"><a class="link-nav" href="services.html"><i class="fas fa-bell"></i>Услуги и Цени</a></li>
+                        <li lang="bg" class="nav"><a class="link-nav" href="diplomas.html"><i class="fas fa-book"></i>Дипломи</a></li>
+                        <li lang="bg" class="nav"><a class="link-nav" href="contacts.html"><i class="fa fa-phone"></i>Контакти</a></li>
+                        
+                        <li lang="gr" class="nav" id="menubutton" ><a class="link-nav" href="javascript:void(0);" onclick="myFunction()"><i class="fas fa-bars"></i>MENU</a></li>
+                    <div id="myLinks">
+                        <li lang="gr" class="nav"><a class="link-nav" href="index.html"><i class="fas fa-user"></i>ΓΙΑ ΜΕΝΑ</a></li>
+                        <li lang="gr" class="nav"><a class="link-nav" href="services.html"><i class="fas fa-bell"></i>ΥΠΗΡΕΣΙΕΣ ΚΑΙ ΤΙΜΕΣ</a></li>
+                        <li lang="gr" class="nav"><a class="link-nav" href="diplomas.html"><i class="fas fa-book"></i>ΠΤΥΧΙΑ</a></li>
+                        <li lang="gr" class="nav"><a class="link-nav" href="contacts.html"><i class="fa fa-phone"></i>ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+                    </div>
+                    </ul>
+                </nav>
+            </header>
+        </sidebar>
+
+        <section class="wrapper-diplomas">
+            
+            <select id="lang-switch">
+                <option value="bg">Български</option>
+                <option value="gr">Ελληνικά</option>
+            </select>
+
+                <div class="section-box">
+                    <h5 lang="bg">ДИПЛОМА ЗА БАКАЛАВЪРСКА СТЕПЕН</h5>
+                    <h5 lang="gr">ΠΤΥΧΙΟ Bsc</h5>
+                    
+                    <a href="/Content/GreekDiploma.jpg">
+                            <img class="img-diploma"
+                            src="/Content/GreekDiploma.jpg"
+                            alt="greekDiploma">
+                    </a>
+                    
+                    <p lang="bg" class="text-diploma">
+                            Завършил съм с много добър успех Пирейския университет в град Атина, Гърция със специалност "Банково дело".
+                            на пълна стипендия от Гръцкото правителство. Това е една от най-реномираните и желани специалности 
+                            с икономическа насоченост в страната.
+                            Цялото обучение бе проведено на Гръцки език.
+                    </p>
+                    <p lang="gr" class="text-diploma">
+                        Αποφοίτησα με μεγάλη επιτυχία από το Πανεπιστήμιο Πειραιώς στην Αθήνα, Ελλάδα με πτυχίο Τραπεζικής. 
+                         με πλήρη υποτροφία από την ελληνική κυβέρνηση. Αυτή είναι μια από τις πιο γνωστές και επιθυμητές σπεσιαλιτέ
+                         με οικονομικό προσανατολισμό στη χώρα. Όλη η εκπαίδευση πραγματοποιήθηκε στα ελληνικά.
+                </p>
+                </div>
+
+                <div class="section-box">
+                    <h5 lang="bg">ДИПЛОМА ЗА МАГИСТЪРСКА СТЕПЕН</h5>
+                    <h5 lang="gr">ΠΤΥΧΙΟ Msc</h5>
+                    
+                    <a href="/Content/DutchDiploma.jpg">
+                        <img class="img-diploma"
+                        src="/Content/DutchDiploma.jpg"
+                        alt="dutchDiploma">
+                    </a>
+                        
+                    <p lang="bg" class="text-diploma">
+                        Магистърската ми степен е със специалност "Финанси" от университета Тилбург
+                        в Нидерландия.
+                    </p>
+                    <p lang="gr" class="text-diploma">
+                        Το μεταπτυχιακό μου είναι στα Χρηματοοικονομικά από το Πανεπιστήμιο Tilburg της Ολλανδίας.
+                    </p>
+                </div>
+                    
+            </section>
+        </section>
+
+        <footer class="footer"> <p class="text-footer">© 2020 Angel Angelov All rights reserved </p></footer>
+
+    </div>
+   
+</body>
+<script>
+    $('[lang="gr"]').hide();
+    $('#lang-switch').change(function () {
+      var lang = $(this).val();
+      switch (lang) {
+        case 'bg': 
+          $('[lang]').hide();
+          $('[lang="bg"]').show();
+          break;
+        case 'gr':
+          $('[lang]').hide();
+          $('[lang="gr"]').show();
+          break;
+      }
+    });
+</script>
+</html>

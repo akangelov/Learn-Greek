@@ -1,0 +1,50 @@
+.button-basic {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+input {
+    border:1px solid grey;   
+}
+
+form {
+    padding: 10px;
+}
+
+label {
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1px;
+    margin-top: 8px;
+}
+
+.contact {
+    padding: 10px;
+}
+
+/* .contacts-wrapper {
+    display: flex;
+} */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 25px;
+    padding: 20px;
+
+}
+
+.notice {
+   
+}
+
+.contacts-wrapper {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+
